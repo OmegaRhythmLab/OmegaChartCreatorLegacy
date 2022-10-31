@@ -1,0 +1,14 @@
+{
+  "name": "occ",
+  "version": "0.0.1",
+  "description": "Omega Chart Creator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "WERDXZ et al.",
+  "license": "WTFPL",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
+}
