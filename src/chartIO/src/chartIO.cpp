@@ -6,7 +6,7 @@
 #include <iostream>
 #endif
 
-werdxz::memstream* VARIFICATION_FAILED;
+werdxz::memstream* Verification_FAILED;
 
 int werdxz::test(){
 	return 1;
@@ -48,7 +48,7 @@ werdxz::memstream* werdxz::readOmgc(char* omgcTitle){
 
 	std::fread(output->mdptr, sizeof(metadata), 1, file);
 
-	if(!werdxz::_verify(output->mdptr))return VARIFICATION_FAILED;
+	if(!werdxz::_verify(output->mdptr))return Verification_FAILED;
 
 	output->lineList = new line[output->mdptr->lineCount];
 	output->noteList = new note[output->mdptr->noteCount];
@@ -73,7 +73,7 @@ using namespace werdxz;
 int main(){
 	memstream* res = readOmgc("test.omgc");	
 
-	if(res == VARIFICATION_FAILED){
+	if(res == Verification_FAILED){
 		cout<<"varification failed"<<endl<<
 			"aborting"<<endl;
 		return 1;
