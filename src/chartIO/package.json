@@ -1,0 +1,11 @@
+{
+  "name": "chartio",
+  "version": "0.0.1",
+  "description": "the input and output to the filestream",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "WERDXZ ^v^",
+  "license": "WTFPL"
+}

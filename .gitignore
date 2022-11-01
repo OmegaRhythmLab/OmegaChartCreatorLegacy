@@ -1,3 +1,4 @@
 build/*
-scr/web/node_modules/*
-
+src/web/node_modules/*
+src/chartIO/node_modules/*
+src/occ-kernal/node_modules/*
