@@ -7,13 +7,12 @@
  * @version 0.0.1 dev
  * @date 2022-10-26
  */
-#ifndef CHARTIO_H
-#define CHARTIO_H
+#ifndef OMGCOUTPUT_H
+#define OMGCOUTPUT_H
 #include <fstream>
-#include "chartTypes.h"
+#include "./omgcOutputTypes.h" 
 
-#define DEBUG
-namespace werdxz{
+namespace omega{
 	
 	struct memstream{
 			metadata* mdptr;
@@ -31,14 +30,13 @@ namespace werdxz{
 		// 给 .omgc 文件
 		char _[4];
 	};
-
-	bool _verify(metadata* data);
-
 	void* translate(void* _);
 
-	memstream* readOmgc(char* omgcTitle);
+#ifdef READ_OMGC_ENABLED
+	bool _verify(metadata* data);
 
-	int test(void);
+	memstream* readOmgc(char* omgcTitle);
+#endif
 }
 
-#endif /* CHARTIO_H */
+#endif /* OMGCOUTPUT_H */

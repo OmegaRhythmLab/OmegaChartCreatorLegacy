@@ -1,5 +1,5 @@
 /**
- * @file chartTypes.h
+ * @file omgeOutputTypes.h  
  * @brief defination of all input struct
  * 				for omgc file ver 2
  * @author xz ^v^ 
@@ -7,8 +7,8 @@
  * @date 2022-10-26
  */
 
-#ifndef CHART_TYPES_H
-#define CHART_TYPES_H
+#ifndef OMGCOUTPUTTYPES_H
+#define OMGCOUTPUTTYPES_H
 
 #include <cstdint>
 
@@ -28,10 +28,9 @@
 #define VERIFICATION_CODE {0x6f,0x6d,0x67,0x63,0x03,0x00,0x00,0x00}
 
 
+namespace omega{
 typedef float omgfloat;
 typedef std::uint32_t omgint;
-
-namespace werdxz{
 	// 占位符(
 	struct arg{
 		char _[4];
@@ -74,4 +73,4 @@ namespace werdxz{
 	};
 
 }
-#endif
+#endif /* OMGCOUTPUTTYPES_H */
