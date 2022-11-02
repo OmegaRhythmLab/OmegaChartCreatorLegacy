@@ -1,7 +1,7 @@
 /**
- * @file chartIO.h
- * @brief chartIO, dealing with input
- * 				and output, also the swap of
+ * @file omgcOutput.h
+ * @brief omgcOutput, dealing with 
+ * 				output, also the swap of
  * 				informations between dll/so
  * @author xz ^v^
  * @version 0.0.1 dev
@@ -31,6 +31,8 @@ namespace omega{
 		char _[4];
 	};
 	void* translate(void* _);
+	
+	bool write()
 
 #ifdef READ_OMGC_ENABLED
 	bool _verify(metadata* data);
