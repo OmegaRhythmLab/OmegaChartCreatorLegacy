@@ -5,3 +5,4 @@ src/occ-kernal/node_modules/*
 src/web/build
 src/chartIO/build
 src/occ-kernal/build
+*.DS_Store
