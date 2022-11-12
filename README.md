@@ -19,3 +19,5 @@ Omega 制谱工具箱
   0. You just DO WHAT THE FUCK YOU WANT TO.
 ```
 
+不出意外的话就快要删库了
+
